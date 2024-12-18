@@ -1,0 +1,13 @@
+PyAudio
+SpeechRecognition
+pyttsx3
+streamlit
+langchain
+groq
+python-dotenv
+langchain-groq
+langchain-community
+selenium
+flask
+google-api-python-client
+gunicorn
