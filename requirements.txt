@@ -10,4 +10,5 @@ selenium
 flask
 google-api-python-client
 gunicorn
-
+gTTS
+playsound==1.2.2
