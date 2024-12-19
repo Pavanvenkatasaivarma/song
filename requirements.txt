@@ -1,6 +1,5 @@
 
 SpeechRecognition
-pyttsx3
 streamlit
 langchain
 groq
@@ -11,4 +10,4 @@ selenium
 flask
 google-api-python-client
 gunicorn
-PyAudio @ https://github.com/intxcc/pyaudio_portaudio/releases/download/1.0/PyAudio-0.2.11-cp39-cp39-manylinux1_x86_64.whl
+
