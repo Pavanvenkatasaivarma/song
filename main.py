@@ -182,7 +182,7 @@ def main():
                 elif "search" in command:
                     song_name = command.strip()
                     search_music(song_name)
-               elif "play" in command:
+                elif "play" in command:
                     song_name = command.strip()
                     play_music(song_name) 
                 elif "stop" in command:
