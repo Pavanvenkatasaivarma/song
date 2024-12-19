@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
 import speech_recognition as sr
-import pyttsx3
 import os
 from selenium import webdriver
 import threading
@@ -116,32 +115,14 @@ def play_song(song_name):
 
 
 
-
-# Initialize Text-to-Speech engine
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)
-engine.setProperty('volume', 1.0)
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
-
-# Helper functions
-def speak(text):
-    try:
-        engine.say(text)
-        engine.runAndWait()
-    finally:
-        engine.stop()
-
-
 def play_music():
     """Function to open the music app or play a song."""
     music_folder = "C:/Users/YourUsername/Music"  # Change this path to your music folder
     songs = os.listdir(music_folder)
     if songs:
         os.startfile(os.path.join(music_folder, songs[0]))  # Play the first song
-        speak("Playing your music.")
     else:
-        speak("No songs found in your music folder.")
+        print("no songs available")
 def get_session_history(session_id: str) -> InMemoryChatMessageHistory:
         if session_id not in store:
             store[session_id] = InMemoryChatMessageHistory()
